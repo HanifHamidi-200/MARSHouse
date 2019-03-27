@@ -1,0 +1,8 @@
+ConstructionRobots
+==================
+
+uses SameOrientation gathered from (Malus_WoodworkStunts)
+also spies on (ProgramsCreated_AI5)
+also galvanised towards (INVEST_WorkInvoices)
+samesteppings as LumieresDeSoleil
+sameinterfacing as AdamHuman

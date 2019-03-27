@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="STRAY.exe" version="1.0.0.0" publicKeyToken="cb20678aaab9558b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F spark.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="STRAY" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="STRAY.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="STRAY.exe" size="36832">
+      <assemblyIdentity name="STRAY" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PqjZgifKXQkbAHwAIXZomvh1t8Tmer+BRwAYYXjAZBA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F spark.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+EPQz208gwlcrv8qk3lmfrGWIcTsNUq2x0gU1S0rIeE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="STRAY.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="890608167fa15c1e90ff9b6ac39b245b167885d1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5aoxjkB+XYstgH1kCo1EteVKLQUkPj6Ft83bMN8pQ0I=</DigestValue></Reference></SignedInfo><SignatureValue>DKg7t/BePjpXlMJB9vf2FwbLgyhjGbh56c3sxerYUdypTQqhEOSBXA3FqMbDGVl4tjQzTyPFtJZPNDZGgI0oiyL4rNKFtl2ndwwnJytC1lsR5HIco6Sv8y3zYFB6wedTR5QqlpVMmn8PIBq+eyLcl4hUfngyDLK2h1odrmfR5g8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vU2qcMfojZdpFidpqZnpaic1uc8txmKPyXC5xAkPUBwbNSwPe2MSCY9KHSwLwILOlOEXzkPQB9iBEIrxksqLkycY3+0WPoeAJW3ylf+NgkeWaLJP1TRSEJzoI9hCTRaDMj0yjdyftoX0LaUw4qss4DANpUg7sSccxoIyEr94cVU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="424329df30dbcdb7853e3e24052d4ae5b5448d0a647d802d8b5d7e408e31aae5" Description="" Url=""><as:assemblyIdentity name="STRAY.exe" version="1.0.0.0" publicKeyToken="cb20678aaab9558b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>/fp+LZV645bz13g5TNRM8/VzPruTtg83Pwet+TBENpc=</DigestValue></Reference></SignedInfo><SignatureValue>eRcTdJH5GNuFoqXa8W5BaHkEJCSVEEQqDGVM7DsGr9AuTv9jf3q/pELIyiGVTmmQ7bvz8S7oIsssioHnQZjNQqv8OSIcvOPltPPNZVNIzkBzkSiKXqhHiZ0SNK7OBgJ+0kZbxUUgVkdGo2+86k9NVulp9y18Bt0r626O1n0WlPI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vU2qcMfojZdpFidpqZnpaic1uc8txmKPyXC5xAkPUBwbNSwPe2MSCY9KHSwLwILOlOEXzkPQB9iBEIrxksqLkycY3+0WPoeAJW3ylf+NgkeWaLJP1TRSEJzoI9hCTRaDMj0yjdyftoX0LaUw4qss4DANpUg7sSccxoIyEr94cVU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQP3Kbhyrey6ZEOW4DKl25/TANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwOTIxMTMyNzA3WhcNMTkwOTIxMTkyNzA3WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL1NqnDH6I2XaRYnaamZ6WonNbnPLcZij8lwucQJD1AcGzUsD3tjEgmPSh0sC8CCzpThF85D0AfYgRCK8ZLKi5MnGN/tFj6HgCVt8pX/jYJHlmiyT9U0UhCc6CPYQk0WgzI9Mo3cn7aF9C2lMOKrLOAwDaVIO7EnHMaCMhK/eHFVAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAMb7TtH2yD+e+YfAWLVpWHf0PkauLSLDMCJr4vlZAqPbGH50r5FjOi0tG+PbPHlQPd/8FhHDMftHbyMj8rm12cITn00yf8qzBSegf3/Yft4dBRstHhCS9nPHj5xLxge3U+YjoHCYuYtGS/Ze/o557rpn7jNLZDx3XxMNctrRBcIE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

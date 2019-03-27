@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GRADIE.exe" version="1.0.0.0" publicKeyToken="a6aa8a46958104b0" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F redkind.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GRADIE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GRADIE.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GRADIE.exe" size="146912">
+      <assemblyIdentity name="GRADIE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bZlsJ8suAC4JFsX+UIpgzBWehV0JH2udcsU4iao7IxY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F redkind.ico" size="132494">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WPnCmI86Tx+v4Agw4Q2Nx1nRxtHaJoayTxzQn6Tva/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GRADIE.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="61c7cafc957a401d96e81890edd39b0711eddd3e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>S2cRCt6rFIsvaMswW/eQC8xGUJ8ST2y7VEtSVfMXWq4=</DigestValue></Reference></SignedInfo><SignatureValue>pm1YkIAo6NoepN8K6/UOz9ZMAAqaEO5/RWGmQK4QUIhnPELfvRu0n9c5M3rZztkcnQn1glahJCZQ1AVV3RXczWw+FdreHnY/pg9Mrw9FHpkCiXXoIXy8B1Gv/NtY33cgATqmGLiKd70JmAZFB2tGV44dZPXEcztkC9bHkhUjhhE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s0cvPdFm08oy/Vc73ruj1OhrSokT6gxncGRgMlvtYVy6LCbXOXGPxosxjGnEhfUgQtfT8xWy/YhaPaeeybReawfdSKSd2NLviFC5VYTv6ZZVigxNMnzHlbMhdAMZVDlE0yv2bmlc2X3707DcAGOqyxLeNcHzDlKCI2s8mvTVrBE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ae5a17f355524b54bb6c4f129f5046cc0b90f75b30cb682f8b14abde0a11674b" Description="" Url=""><as:assemblyIdentity name="GRADIE.exe" version="1.0.0.0" publicKeyToken="a6aa8a46958104b0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WROX4h+4v+n3rGyH4yMMaShiN6L1dq6WBDu1n7UJ5so=</DigestValue></Reference></SignedInfo><SignatureValue>VZfJrshpFjGnlTP/3AN7lckqakOQhz3Zts8gzwNzgpYeGgKe7t0HHsk8mbPKg9zzirFEbY8+RRbeMWsF4+eIHdqWR3NJ0RjsXEl8C7VqO9SPJD7gtz4FsmYf/6x7vwhdD8goHcoF5MKeKX7ixZYXwuSexqayOrxsFBQT76HNPuI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s0cvPdFm08oy/Vc73ruj1OhrSokT6gxncGRgMlvtYVy6LCbXOXGPxosxjGnEhfUgQtfT8xWy/YhaPaeeybReawfdSKSd2NLviFC5VYTv6ZZVigxNMnzHlbMhdAMZVDlE0yv2bmlc2X3707DcAGOqyxLeNcHzDlKCI2s8mvTVrBE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQGcI4A2GlpYJOi1yv2oJfnTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgxMDExMTUwNjM2WhcNMTkxMDExMjEwNjM2WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALNHLz3RZtPKMv1XO967o9Toa0qJE+oMZ3BkYDJb7WFcuiwm1zlxj8aLMYxpxIX1IELX0/MVsv2IWj2nnsm0XmsH3UikndjS74hQuVWE7+mWVYoMTTJ8x5WzIXQDGVQ5RNMr9m5pXNl9+9Ow3ABjqssS3jXB8w5SgiNrPJr01awRAgMBAAEwDQYJKoZIhvcNAQELBQADgYEABpZsJfW3JMG54TOEkmVBpVmFkLq3MZG48axpSfPa+A72yT63DkWKQ/DmiF2eNaZvsqVymF0EtWbS7SkDhem3j5cD23AfQ5/ew6T+cLrccnVq+mt5IxPhHdC245v54uOCCfpBXdNro8AhgKfBodHVQ/AgOevOwp1CRgnM1hpnMyM=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

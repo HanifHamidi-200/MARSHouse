@@ -1,0 +1,14 @@
+c:\users\hanif\source\repos\GRADIE\GRADIE\bin\Debug\GRADIE.exe.config
+c:\users\hanif\source\repos\GRADIE\GRADIE\bin\Debug\GRADIE.exe
+c:\users\hanif\source\repos\GRADIE\GRADIE\bin\Debug\GRADIE.pdb
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.csprojAssemblyReference.cache
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.Form1.resources
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.Properties.Resources.resources
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.csproj.GenerateResource.cache
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.csproj.CoreCompileInputs.cache
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.exe
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.pdb
+c:\users\hanif\source\repos\GRADIE\GRADIE\bin\Debug\GRADIE.exe.manifest
+c:\users\hanif\source\repos\GRADIE\GRADIE\bin\Debug\GRADIE.application
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.exe.manifest
+c:\users\hanif\source\repos\GRADIE\GRADIE\obj\Debug\GRADIE.application

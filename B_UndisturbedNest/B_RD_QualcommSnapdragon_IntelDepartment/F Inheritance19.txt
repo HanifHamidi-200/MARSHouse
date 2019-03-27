@@ -1,0 +1,20 @@
+Inheritance19
+=============
+
+1) EuropeanHighway
+2) NorthAmerica_SouthAmerica_Trainline
+3) PacificCoastTrainline
+4) IcebridgeCoastTrainline
+5) CenfrancsRoundabout
+6) BernUnderground
+7) ArabianTree
+8) ChinaMongolia_(OneTrainline)
+9) KoreanTunnel_(SiberianTrainline)
+10) NewzealandTunnel
+11) MadagascarTunnel
+12) IbizaTunnel
+13) MaltaCyprusDiscreteMotorway
+14) TanganyikaRoundabout
+15) MexicoCrossroads
+16) AfghanistanCentral
+17) AzerbaijanUnderground

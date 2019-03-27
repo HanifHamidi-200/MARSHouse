@@ -1,0 +1,935 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang62 using System;\par
+using System.Collections.Generic;\par
+using System.ComponentModel;\par
+using System.Data;\par
+using System.Drawing;\par
+using System.Linq;\par
+using System.Text;\par
+using System.Threading.Tasks;\par
+using System.Windows.Forms;\par
+\par
+namespace MMPO\par
+\{\par
+    public partial class Form1 : Form\par
+    \{\par
+        private List<int> _col1 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col2 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col3 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col4 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col5 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col6 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col7 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private List<int> _col8 = new List<int> \{ 0, 0, 0, 0, 0, 0, 0, 0 \};\par
+        private int nNumber;\par
+        private int mnAdd;\par
+\par
+\par
+        private int fType(int nCol, int nRow)\par
+        \{\par
+            switch (nCol)\par
+            \{\par
+                case 1:\par
+                    return _col1[nRow - 1];\par
+                case 2:\par
+                    return _col2[nRow - 1];\par
+                case 3:\par
+                    return _col3[nRow - 1];\par
+                case 4:\par
+                    return _col4[nRow - 1];\par
+                case 5:\par
+                    return _col5[nRow - 1];\par
+                case 6:\par
+                    return _col6[nRow - 1];\par
+                case 7:\par
+                    return _col7[nRow - 1];\par
+                default:\par
+                    return _col8[nRow - 1];\par
+            \}\par
+        \}\par
+\par
+        private bool fValid(int nMode, int nType)\par
+        \{\par
+            switch (nMode)\par
+            \{\par
+                case 1:\par
+                    return (nType ==5);\par
+                case 2:\par
+                    return (nType == 3);\par
+                case 3:\par
+                    return (nType == 4);\par
+                default:\par
+                    return (nType == 7);\par
+            \}\par
+        \}\par
+\par
+        private void fClick(int nCol, int nRow)\par
+        \{\par
+             int nType = fType(nCol, nRow);\par
+            int nItem;\par
+\par
+             if (fValid(mnAdd, nType))\par
+                \{\par
+                switch (mnAdd)\par
+                \{\par
+                    case 1:\par
+                        nItem = 3;\par
+                        break;\par
+                    case 2:\par
+                        nItem = 4;\par
+                        break;\par
+                    case 3:\par
+                        nItem = 7;\par
+                        break;\par
+                    default:\par
+                        nItem = 6;\par
+                        break;\par
+                \}\par
+                fPut(nCol, nRow, nItem);\par
+                \}\par
+            \}\par
+\par
+        private void fPut(int nCol, int nRow, int nType)\par
+        \{\par
+            switch (nCol)\par
+            \{\par
+                case 1:\par
+                    _col1[nRow - 1] = nType;\par
+                    break;\par
+                case 2:\par
+                    _col2[nRow - 1] = nType;\par
+                    break;\par
+                case 3:\par
+                    _col3[nRow - 1] = nType;\par
+                    break;\par
+                case 4:\par
+                    _col4[nRow - 1] = nType;\par
+                    break;\par
+                case 5:\par
+                    _col5[nRow - 1] = nType;\par
+                    break;\par
+                case 6:\par
+                    _col6[nRow - 1] = nType;\par
+                    break;\par
+                case 7:\par
+                    _col7[nRow - 1] = nType;\par
+                    break;\par
+                default:\par
+                    _col8[nRow - 1] = nType;\par
+                    break;\par
+            \}\par
+            fUpdateDisplay();\par
+        \}\par
+\par
+        private void fReset()\par
+        \{\par
+            Random rnd1 = new Random();\par
+\par
+            mnAdd = 1;\par
+\par
+            for(int i = 1; i <= 8; i++)\par
+            \{\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col1[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col1[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col2[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col2[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col3[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col3[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col4[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col4[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col5[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col5[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col6[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col6[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col7[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col7[i - 1] = 2;\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 5)\par
+                \{\par
+                    _col8[i - 1] = 1;\par
+                \}\par
+                else\par
+                \{\par
+                    _col8[i - 1] = 2;\par
+                \}\par
+            \}\par
+\par
+            for (int i = 1; i <= 8; i++)\par
+            \{\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col1[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col2[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col3[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col4[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col5[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col6[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col7[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+                nNumber = rnd1.Next(1, 10);\par
+                if (nNumber <= 6)\par
+                \{\par
+                    _col8[i - 1] = rnd1.Next(3, 8);\par
+                \}\par
+            \}\par
+\par
+            fUpdateDisplay();\par
+        \}\par
+            private void fPeek(int nValue, int nRotate, ref PictureBox _pic2)\par
+        \{\par
+            PictureBox picture1 = new PictureBox\par
+            \{\par
+                Name = "pictureBox1",\par
+                Image = Image.FromFile(@"F blank1.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture2 = new PictureBox\par
+            \{\par
+                Name = "pictureBox2",\par
+                Image = Image.FromFile(@"F blank2.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture3 = new PictureBox\par
+            \{\par
+                Name = "pictureBox3",\par
+                Image = Image.FromFile(@"F M_gold.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture4 = new PictureBox\par
+            \{\par
+                Name = "pictureBox4",\par
+                Image = Image.FromFile(@"F M_steel.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture5 = new PictureBox\par
+            \{\par
+                Name = "pictureBox5",\par
+                Image = Image.FromFile(@"F mound.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture6 = new PictureBox\par
+            \{\par
+                Name = "pictureBox6",\par
+                Image = Image.FromFile(@"F O_star.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture7 = new PictureBox\par
+            \{\par
+                Name = "pictureBox7",\par
+                Image = Image.FromFile(@"F P_kettle.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+            PictureBox picture8 = new PictureBox\par
+            \{\par
+                Name = "pictureBox8",\par
+                Image = Image.FromFile(@"F NullGate.png"),\par
+                SizeMode = PictureBoxSizeMode.StretchImage\par
+            \};\par
+             \par
+            switch (nValue)\par
+            \{\par
+                case 1:\par
+                    _pic2 = picture1;\par
+                    break;\par
+                case 2:\par
+                    _pic2 = picture2;\par
+                    break;\par
+                case 3:\par
+                    _pic2 = picture3;\par
+                    break;\par
+                case 4:\par
+                    _pic2 = picture4;\par
+                    break;\par
+                case 5:\par
+                    _pic2 = picture5;\par
+                    break;\par
+                case 6:\par
+                    _pic2 = picture6;\par
+                    break;\par
+                case 7:\par
+                    _pic2 = picture7;\par
+                    break;\par
+                default:\par
+                    _pic2 = picture8;\par
+                    break;\par
+            \}\par
+            for (int i = 1; i <= nRotate - 1; i++)\par
+            \{\par
+                _pic2.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);\par
+            \}\par
+\par
+        \}\par
+\par
+        private void fUpdateDisplay()\par
+        \{\par
+            PictureBox _pic = new PictureBox();\par
+            int nType, nRotate = 1;\par
+\par
+            nType = _col1[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic11.Image = _pic.Image;\par
+            nType = _col1[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic12.Image = _pic.Image;\par
+            nType = _col1[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic13.Image = _pic.Image;\par
+            nType = _col1[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic14.Image = _pic.Image;\par
+            nType = _col1[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic15.Image = _pic.Image;\par
+            nType = _col1[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic16.Image = _pic.Image;\par
+            nType = _col1[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic17.Image = _pic.Image;\par
+            nType = _col1[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic18.Image = _pic.Image;\par
+\par
+            //2\par
+\par
+            nType = _col2[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic21.Image = _pic.Image;\par
+            nType = _col2[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic22.Image = _pic.Image;\par
+            nType = _col2[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic23.Image = _pic.Image;\par
+            nType = _col2[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic24.Image = _pic.Image;\par
+            nType = _col2[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic25.Image = _pic.Image;\par
+            nType = _col2[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic26.Image = _pic.Image;\par
+            nType = _col2[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic27.Image = _pic.Image;\par
+            nType = _col2[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic28.Image = _pic.Image;\par
+\par
+\par
+\par
+            //3\par
+\par
+            nType = _col3[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic31.Image = _pic.Image;\par
+            nType = _col3[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic32.Image = _pic.Image;\par
+            nType = _col3[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic33.Image = _pic.Image;\par
+            nType = _col3[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic34.Image = _pic.Image;\par
+            nType = _col3[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic35.Image = _pic.Image;\par
+            nType = _col3[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic36.Image = _pic.Image;\par
+            nType = _col3[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic37.Image = _pic.Image;\par
+            nType = _col3[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic38.Image = _pic.Image;\par
+\par
+\par
+            //4\par
+\par
+            nType = _col4[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic41.Image = _pic.Image;\par
+            nType = _col4[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic42.Image = _pic.Image;\par
+            nType = _col4[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic43.Image = _pic.Image;\par
+            nType = _col4[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic44.Image = _pic.Image;\par
+            nType = _col4[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic45.Image = _pic.Image;\par
+            nType = _col4[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic46.Image = _pic.Image;\par
+            nType = _col4[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic47.Image = _pic.Image;\par
+            nType = _col4[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic48.Image = _pic.Image;\par
+\par
+\par
+            //5\par
+\par
+            nType = _col5[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic51.Image = _pic.Image;\par
+            nType = _col5[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic52.Image = _pic.Image;\par
+            nType = _col5[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic53.Image = _pic.Image;\par
+            nType = _col5[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic54.Image = _pic.Image;\par
+            nType = _col5[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic55.Image = _pic.Image;\par
+            nType = _col5[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic56.Image = _pic.Image;\par
+            nType = _col5[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic57.Image = _pic.Image;\par
+            nType = _col5[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic58.Image = _pic.Image;\par
+\par
+\par
+            //6\par
+\par
+            nType = _col6[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic61.Image = _pic.Image;\par
+            nType = _col6[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic62.Image = _pic.Image;\par
+            nType = _col6[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic63.Image = _pic.Image;\par
+            nType = _col6[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic64.Image = _pic.Image;\par
+            nType = _col6[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic65.Image = _pic.Image;\par
+            nType = _col6[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic66.Image = _pic.Image;\par
+            nType = _col6[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic67.Image = _pic.Image;\par
+            nType = _col6[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic68.Image = _pic.Image;\par
+\par
+\par
+            //7\par
+\par
+            nType = _col7[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic71.Image = _pic.Image;\par
+            nType = _col7[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic72.Image = _pic.Image;\par
+            nType = _col7[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic73.Image = _pic.Image;\par
+            nType = _col7[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic74.Image = _pic.Image;\par
+            nType = _col7[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic75.Image = _pic.Image;\par
+            nType = _col7[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic76.Image = _pic.Image;\par
+            nType = _col7[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic77.Image = _pic.Image;\par
+            nType = _col7[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic78.Image = _pic.Image;\par
+\par
+\par
+            //8\par
+\par
+            nType = _col8[0];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic81.Image = _pic.Image;\par
+            nType = _col8[1];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic82.Image = _pic.Image;\par
+            nType = _col8[2];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic83.Image = _pic.Image;\par
+            nType = _col8[3];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic84.Image = _pic.Image;\par
+            nType = _col8[4];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic85.Image = _pic.Image;\par
+            nType = _col8[5];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic86.Image = _pic.Image;\par
+            nType = _col8[6];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic87.Image = _pic.Image;\par
+            nType = _col8[7];\par
+            fPeek(nType, nRotate, ref _pic);\par
+            pic88.Image = _pic.Image;\par
+\par
+\par
+        \}\par
+\par
+\par
+        public Form1()\par
+        \{\par
+            InitializeComponent();\par
+        \}\par
+\par
+        private void Form1_Load(object sender, EventArgs e)\par
+        \{\par
+            fReset();\par
+        \}\par
+\par
+        private void btnQNext_Click(object sender, EventArgs e)\par
+        \{\par
+            fReset();\par
+        \}\par
+\par
+        private void btnAdd1_Click(object sender, EventArgs e)\par
+        \{\par
+            mnAdd = 1;\par
+        \}\par
+\par
+        private void btnAdd2_Click(object sender, EventArgs e)\par
+        \{\par
+            mnAdd = 2;\par
+        \}\par
+\par
+        private void btnAdd3_Click(object sender, EventArgs e)\par
+        \{\par
+            mnAdd = 3;\par
+        \}\par
+\par
+        private void btnAdd4_Click(object sender, EventArgs e)\par
+        \{\par
+            mnAdd = 4;\par
+        \}\par
+\par
+        private void pic11_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 1);\par
+        \}\par
+\par
+      \par
+        private void pic12_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 2);\par
+        \}\par
+\par
+        private void pic13_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 3);\par
+        \}\par
+\par
+        private void pic14_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 4);\par
+        \}\par
+\par
+        private void pic15_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 5);\par
+        \}\par
+\par
+        private void pic16_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 6);\par
+        \}\par
+\par
+        private void pic17_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 7);\par
+        \}\par
+\par
+        private void pic18_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(1, 8);\par
+        \}\par
+\par
+        private void pic21_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 1);\par
+        \}\par
+\par
+        private void pic22_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 2);\par
+        \}\par
+\par
+        private void pic23_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 3);\par
+        \}\par
+\par
+        private void pic24_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 4);\par
+        \}\par
+\par
+        private void pic25_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 5);\par
+        \}\par
+\par
+        private void pic26_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 6);\par
+        \}\par
+\par
+        private void pic27_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 7);\par
+        \}\par
+\par
+        private void pic28_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(2, 8);\par
+        \}\par
+\par
+        //3\par
+        private void pic31_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 1);\par
+        \}\par
+\par
+        private void pic32_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 2);\par
+        \}\par
+\par
+        private void pic33_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 3);\par
+        \}\par
+\par
+        private void pic34_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 4);\par
+        \}\par
+\par
+        private void pic35_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 5);\par
+        \}\par
+\par
+        private void pic36_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 6);\par
+        \}\par
+\par
+        private void pic37_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 7);\par
+        \}\par
+\par
+        private void pic38_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(3, 8);\par
+        \}\par
+\par
+        //4\par
+        private void pic41_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 1);\par
+        \}\par
+\par
+        private void pic42_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 2);\par
+        \}\par
+\par
+        private void pic43_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 3);\par
+        \}\par
+\par
+        private void pic44_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 4);\par
+        \}\par
+\par
+        private void pic45_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 5);\par
+        \}\par
+\par
+        private void pic46_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 6);\par
+        \}\par
+\par
+        private void pic47_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 7);\par
+        \}\par
+\par
+        private void pic48_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(4, 8);\par
+        \}\par
+\par
+        //5\par
+        private void pic51_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 1);\par
+        \}\par
+\par
+        private void pic52_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 2);\par
+        \}\par
+\par
+        private void pic53_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 3);\par
+        \}\par
+\par
+        private void pic54_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 4);\par
+        \}\par
+\par
+        private void pic55_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 5);\par
+        \}\par
+\par
+        private void pic56_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 6);\par
+        \}\par
+\par
+        private void pic57_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 7);\par
+        \}\par
+\par
+        private void pic58_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(5, 8);\par
+        \}\par
+\par
+\par
+        //6 \par
+        private void pic61_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 1);\par
+        \}\par
+\par
+        private void pic62_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 2);\par
+        \}\par
+\par
+        private void pic63_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 3);\par
+        \}\par
+\par
+        private void pic64_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 4);\par
+        \}\par
+\par
+        private void pic65_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 5);\par
+        \}\par
+\par
+        private void pic66_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 6);\par
+        \}\par
+\par
+        private void pic67_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 7);\par
+        \}\par
+\par
+        private void pic68_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(6, 8);\par
+        \}\par
+\par
+\par
+        //7\par
+        private void pic71_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 1);\par
+        \}\par
+\par
+        private void pic72_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 2);\par
+        \}\par
+\par
+        private void pic73_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 3);\par
+        \}\par
+\par
+        private void pic74_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 4);\par
+        \}\par
+\par
+        private void pic75_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 5);\par
+        \}\par
+\par
+        private void pic76_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 6);\par
+        \}\par
+\par
+        private void pic77_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 7);\par
+        \}\par
+\par
+        private void pic78_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(7, 8);\par
+        \}\par
+\par
+\par
+        //8\par
+        private void pic81_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 1);\par
+        \}\par
+\par
+        private void pic82_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 2);\par
+        \}\par
+\par
+        private void pic83_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 3);\par
+        \}\par
+\par
+        private void pic84_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 4);\par
+        \}\par
+\par
+        private void pic85_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 5);\par
+        \}\par
+\par
+        private void pic86_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 6);\par
+        \}\par
+\par
+        private void pic87_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 7);\par
+        \}\par
+\par
+        private void pic88_Click(object sender, EventArgs e)\par
+        \{\par
+            fClick(8, 8);\par
+        \}\par
+    \}\par
+\}\par
+}
+ 

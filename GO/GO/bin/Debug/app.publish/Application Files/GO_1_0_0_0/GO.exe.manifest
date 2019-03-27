@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GO.exe" version="1.0.0.0" publicKeyToken="4f28f79b9201c4ad" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="F tryseed.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GO.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+         requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GO.exe" size="134112">
+      <assemblyIdentity name="GO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u6xG/P5Gj/hR98nCd0KTNtTN6iIovDVzZKZ042Xk3Pw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="F tryseed.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c3t7FHGSPUdJ2GwKVDGzvDDwcZW6F84yxJooe1f4KZs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="GO.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F BUILD.png" size="9888">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ehFpXu5Scep3xUAFRjL+sdmf6o9It62vgu/EXtw46OU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F CATCH.png" size="12002">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DMSRhw0K+fdKspuNc0twytIgUpiCDnMIXOJJd/iSzFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F GO.png" size="14171">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IaQzKCz5neoFkWTqZ+L/+xpxzzcTUeiqCxkFoxivKp4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F GROUP.png" size="12057">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Rtw5H5TAGo4cp7Ieq27QDbWfeKt4LD/FJv54gcqTAho=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F HOLE.png" size="9755">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YusTU3qX1f3+ZHzKi1tl9d6icU0/2ffNRQuMc4zVfwg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F IMPLEM.png" size="6535">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m6iuasDFeakbOjQTClrS3GnVMLpqRLbMJnVMFgk9dls=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F MONST.png" size="11235">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E2HitXetRU4wknYFVOimQZ+ftKYyy0aqTSDA6UInDjg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F SPLIT.png" size="8925">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WdnuePwot2Sk6blxcpWKffPDCqSneresyFO88oRbIeo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pics\F TRELBY.png" size="8986">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bH9w2P1wXgx+F4oJplSVSfwJnnFq0LwwtYVeRUxHcgs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-K87L076\hanif" issuerKeyHash="49e17bc43aeb12c0aebb534694edde6447832c37" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>2naLRI5fLQOI/LehJe2NScuNIrwKyKAAMTz4fbY2bTQ=</DigestValue></Reference></SignedInfo><SignatureValue>Df4oaRV6Yl33F2BoSHSNzR0Qaxoa1d91HTC2k6ZZHEsjLzoFzq8Oe6dmzotVn1KdWGsntlb7nCD0Zm6+BVb1X+sU1AWtuzjWAnE7cVGSlFDCv16RMZu8b0oiBFsMWQwRk5xnnBiDA3zqt+eDl5t2US/6eEtTbGcKiB71lh8SxDw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s13d7UKhbrpjWY6fLs+JHyXL2H1mhF8bPvlKWDzZJC7F20Hj5gpBXEUI/87h8M7rUZXxl9UHXDnx0TX3ALo5Z1LsmVEFMs2fLiomOW1C6bn432e87fZzJ+M5oDyp8UOvqAZs0rW4soM0EgsXU/MDK+RX81OxO6lcdHPu8iMC4GU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="346d36b67df83c3100a0c80abc228dcb498ded25a1b7fc88032d5f8e448b76da" Description="" Url=""><as:assemblyIdentity name="GO.exe" version="1.0.0.0" publicKeyToken="4f28f79b9201c4ad" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-K87L076\hanif</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>i7MZxkYKMQfawl26UwM7MxHeUKxjB8l6BeFBA1x+sbc=</DigestValue></Reference></SignedInfo><SignatureValue>jr1QHzAj1VaEy85ewpRLvJRD48jCPHa/1e/R39xs7Wm/Nb0RT/gKLIpgGnRsyDiGQmITfzueZNYLvtjt1SimvNrxnviZ5OsgLWOEYxYkSa7trvqEzEl2G9P8G6xZWg0y1YKDqz5kJM9G0WFzWSrsBlzSlQ2HSGCQHfKuK/i9RMI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s13d7UKhbrpjWY6fLs+JHyXL2H1mhF8bPvlKWDzZJC7F20Hj5gpBXEUI/87h8M7rUZXxl9UHXDnx0TX3ALo5Z1LsmVEFMs2fLiomOW1C6bn432e87fZzJ+M5oDyp8UOvqAZs0rW4soM0EgsXU/MDK+RX81OxO6lcdHPu8iMC4GU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQc+mI26sJi5dAgzSqgFcEBzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwHhcNMTgwOTI5MDcwNTQwWhcNMTkwOTI5MTMwNTQwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEsAOAA3AEwAMAA3ADYAXABoAGEAbgBpAGYwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALNd3e1CoW66Y1mOny7PiR8ly9h9ZoRfGz75Slg82SQuxdtB4+YKQVxFCP/O4fDO61GV8ZfVB1w58dE19wC6OWdS7JlRBTLNny4qJjltQum5+N9nvO32cyfjOaA8qfFDr6gGbNK1uLKDNBILF1PzAyvkV/NTsTupXHRz7vIjAuBlAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAEFgmc+fszELYn/cInhjSRtQ7NCRBJtf2Om2GkG3GRnUq+WHOjFQc5NH2RmBuQ5M2BHu0eBoZU8BDu8ZH1UYtO5EznYFBVpPwAuvG9PzKeVyVxYfQRiNF5Y2/R/cVAwikRz4E4R/XWB6julRORKsS1TVlBRxPEN9kKvlPxKatugw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
