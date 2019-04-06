@@ -35,6 +35,10 @@
             this.btnOpen5 = new System.Windows.Forms.Button();
             this.btnOpen7 = new System.Windows.Forms.Button();
             this.btnOpen6 = new System.Windows.Forms.Button();
+            this.btnOpen8 = new System.Windows.Forms.Button();
+            this.btnOpen9 = new System.Windows.Forms.Button();
+            this.btnOpen11 = new System.Windows.Forms.Button();
+            this.btnOpen10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen1
@@ -114,11 +118,58 @@
             this.btnOpen6.UseVisualStyleBackColor = false;
             this.btnOpen6.Click += new System.EventHandler(this.BtnOpen6_Click_1);
             // 
+            // btnOpen8
+            // 
+            this.btnOpen8.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen8.Location = new System.Drawing.Point(27, 323);
+            this.btnOpen8.Name = "btnOpen8";
+            this.btnOpen8.Size = new System.Drawing.Size(258, 35);
+            this.btnOpen8.TabIndex = 7;
+            this.btnOpen8.Text = "MetalDoors";
+            this.btnOpen8.UseVisualStyleBackColor = false;
+            this.btnOpen8.Click += new System.EventHandler(this.BtnOpen8_Click);
+            // 
+            // btnOpen9
+            // 
+            this.btnOpen9.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen9.Location = new System.Drawing.Point(27, 364);
+            this.btnOpen9.Name = "btnOpen9";
+            this.btnOpen9.Size = new System.Drawing.Size(258, 35);
+            this.btnOpen9.TabIndex = 8;
+            this.btnOpen9.Text = "GasPlant";
+            this.btnOpen9.UseVisualStyleBackColor = false;
+            this.btnOpen9.Click += new System.EventHandler(this.BtnOpen9_Click);
+            // 
+            // btnOpen11
+            // 
+            this.btnOpen11.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen11.Location = new System.Drawing.Point(307, 76);
+            this.btnOpen11.Name = "btnOpen11";
+            this.btnOpen11.Size = new System.Drawing.Size(258, 35);
+            this.btnOpen11.TabIndex = 9;
+            this.btnOpen11.Text = "CLOCKW";
+            this.btnOpen11.UseVisualStyleBackColor = false;
+            // 
+            // btnOpen10
+            // 
+            this.btnOpen10.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen10.Location = new System.Drawing.Point(307, 35);
+            this.btnOpen10.Name = "btnOpen10";
+            this.btnOpen10.Size = new System.Drawing.Size(258, 35);
+            this.btnOpen10.TabIndex = 9;
+            this.btnOpen10.Text = "BELIT3";
+            this.btnOpen10.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 348);
+            this.BackColor = System.Drawing.Color.Green;
+            this.ClientSize = new System.Drawing.Size(577, 432);
+            this.Controls.Add(this.btnOpen10);
+            this.Controls.Add(this.btnOpen11);
+            this.Controls.Add(this.btnOpen9);
+            this.Controls.Add(this.btnOpen8);
             this.Controls.Add(this.btnOpen6);
             this.Controls.Add(this.btnOpen7);
             this.Controls.Add(this.btnOpen5);
@@ -127,7 +178,7 @@
             this.Controls.Add(this.btnOpen2);
             this.Controls.Add(this.btnOpen1);
             this.Name = "Form1";
-            this.Text = "TRAPWS";
+            this.Text = "TRAPWSBusiness";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
@@ -142,6 +193,10 @@
         private System.Windows.Forms.Button btnOpen5;
         private System.Windows.Forms.Button btnOpen7;
         private System.Windows.Forms.Button btnOpen6;
+        private System.Windows.Forms.Button btnOpen8;
+        private System.Windows.Forms.Button btnOpen9;
+        private System.Windows.Forms.Button btnOpen11;
+        private System.Windows.Forms.Button btnOpen10;
     }
 }
 
