@@ -127,6 +127,12 @@
     <Compile Include="fSub1.Designer.cs">
       <DependentUpon>fSub1.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSub12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSub12.Designer.cs">
+      <DependentUpon>fSub12.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSub2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fSub1.resx">
       <DependentUpon>fSub1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSub12.resx">
+      <DependentUpon>fSub12.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSub2.resx">
       <DependentUpon>fSub2.cs</DependentUpon>

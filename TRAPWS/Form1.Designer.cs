@@ -39,6 +39,7 @@
             this.btnOpen9 = new System.Windows.Forms.Button();
             this.btnOpen11 = new System.Windows.Forms.Button();
             this.btnOpen10 = new System.Windows.Forms.Button();
+            this.btnOpen12 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen1
@@ -160,12 +161,24 @@
             this.btnOpen10.Text = "BELIT3";
             this.btnOpen10.UseVisualStyleBackColor = false;
             // 
+            // btnOpen12
+            // 
+            this.btnOpen12.BackColor = System.Drawing.Color.Yellow;
+            this.btnOpen12.Location = new System.Drawing.Point(307, 117);
+            this.btnOpen12.Name = "btnOpen12";
+            this.btnOpen12.Size = new System.Drawing.Size(258, 35);
+            this.btnOpen12.TabIndex = 10;
+            this.btnOpen12.Text = "UTIL800";
+            this.btnOpen12.UseVisualStyleBackColor = false;
+            this.btnOpen12.Click += new System.EventHandler(this.BtnOpen12_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(577, 432);
+            this.Controls.Add(this.btnOpen12);
             this.Controls.Add(this.btnOpen10);
             this.Controls.Add(this.btnOpen11);
             this.Controls.Add(this.btnOpen9);
@@ -197,6 +210,7 @@
         private System.Windows.Forms.Button btnOpen9;
         private System.Windows.Forms.Button btnOpen11;
         private System.Windows.Forms.Button btnOpen10;
+        private System.Windows.Forms.Button btnOpen12;
     }
 }
 

@@ -83,5 +83,12 @@ namespace TRAPWS
             _dlg.ShowDialog();
 
         }
+
+        private void BtnOpen12_Click(object sender, EventArgs e)
+        {
+            fSub12 _dlg = new fSub12();
+            _dlg.ShowDialog();
+
+        }
     }
 }
