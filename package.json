@@ -1,0 +1,23 @@
+{
+  "name": "marshouse",
+  "version": "1.0.0",
+  "description": "TETDescriptions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanifHamidi-200/MARSHouse.git"
+  },
+  "author": "Hanif Hamidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanifHamidi-200/MARSHouse/issues"
+  },
+  "homepage": "https://github.com/HanifHamidi-200/MARSHouse#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^3.3.2"
+  }
+}
